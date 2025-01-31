@@ -1,0 +1,317 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.card {
+  padding: 1.5rem;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: #0070f3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.backLink {
+  align-self: flex-start;
+  text-decoration: none;
+  color: #0070f3;
+  margin-bottom: 2rem;
+}
+
+.content {
+  max-width: 800px;
+  width: 100%;
+}
+
+.content ul {
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}
+
+.selectContainer {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  background-color: white;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #0070f3;
+  box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.1);
+}
+
+.reviewerInfo {
+  background-color: #f7f7f7;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.reviewerInfo h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+}
+
+.reviewerInfo p {
+  margin: 0.5rem 0;
+}
+
+.features {
+  margin-top: 2rem;
+}
+
+.features h3 {
+  margin-bottom: 1rem;
+}
+
+.inputContainer {
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0070f3;
+  box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.1);
+}
+
+.input::placeholder {
+  color: #a0aec0;
+}
+
+.error {
+  color: #e53e3e;
+  margin-top: 0.5rem;
+}
+
+.input:disabled {
+  background-color: #f7f7f7;
+  cursor: not-allowed;
+}
+
+.uploadSection {
+  margin: 2rem 0;
+  padding: 2rem;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #0051b3;
+}
+
+.button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.success {
+  color: #059669;
+  margin-top: 1rem;
+}
+
+.error {
+  color: #dc2626;
+  margin-top: 1rem;
+}
+
+.reviewContainer {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.formColumn {
+  flex: 1;
+  max-width: calc(100% - 350px);
+  padding-right: 2rem;
+}
+
+.filesColumn {
+  width: 300px;
+  position: sticky;
+  top: 2rem;
+  align-self: flex-start;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 4rem);
+  margin-left: 2rem;
+}
+
+.filesWrapper {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.filesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fileItem {
+  padding: 0.75rem;
+  background: #f5f5f5;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.fileItem:hover {
+  background: #eaeaea;
+}
+
+.fileInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fileName {
+  font-size: 0.9rem;
+  word-break: break-word;
+  flex: 1;
+}
+
+.viewButton {
+  padding: 0.25rem 0.75rem;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.viewButton:hover {
+  background: #0051b3;
+}
+
+/* Update modal styles to ensure it's above the fixed files section */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Update responsive styles */
+@media (max-width: 1400px) {
+  .filesColumn {
+    right: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .reviewContainer {
+    flex-direction: column;
+  }
+
+  .formColumn {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .filesColumn {
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2rem;
+    max-height: 400px;
+  }
+} 
